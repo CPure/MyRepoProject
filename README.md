@@ -2,6 +2,6 @@
 - Open a terminal console at the project directory and run "npm install"
 - Run npm start at the terminal.
 - It will automatically open a browser, if not, go to http://localhost:3000/
-- Clicking on the name a the top corner will redirect to you to my repo.
+- Clicking on the name a the top corner will redirect you to my repo.
 - Scrolldown and click on the commits to go to github and verify them.
 - Enjoy!
