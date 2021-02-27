@@ -47,32 +47,13 @@ import {
               data-placement="bottom"
               href="https://github.com/CPure?tab=repositories"
               target="_blank"
-              title="Coded by Creative Tim"
+              
             >
               Carlos Pure
             </NavbarBrand>
            
           </div>
-          <Collapse
-            className="justify-content-end"
-            navbar
-            isOpen={navbarCollapse}
-          >
-            <Nav navbar>
-              <NavItem>
-                <NavLink
-                  data-placement="bottom"
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  title="Follow us on Twitter"
-                >
-                  <i className="fa fa-twitter" />
-                  <p className="d-lg-none">Twitter</p>
-                </NavLink>
-              </NavItem>
-             
-            </Nav>
-          </Collapse>
+        
         </Container>
       </Navbar>
     );

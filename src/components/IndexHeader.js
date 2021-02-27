@@ -26,8 +26,8 @@ function IndexHeader() {
                   <img alt="..." src={fog} />
                 </div>
               </div>
-              <h2 className="presentation-subtitle text-center"> 
-                myrepoproject
+              <h2 className="presentation-subtitle text-center"  > 
+              <a href="https://github.com/CPure/myrepoproject" target="_blank">myrepoproject</a>
               </h2>
             </Container>
           </div>
