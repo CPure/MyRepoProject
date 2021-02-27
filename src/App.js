@@ -1,8 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react';
+import { endpoint } from "@octokit/endpoint";
+
+const requestOptions = endpoint("GET /repos/{owner}/{repo}/commits", {
+  headers: {
+    authorization: "token 524b2e08acd1cc789d7663507c5775872880de9b",
+  },
+  owner: "CPure",
+  repo: "myrepoproject",
+  type: "private",
+});
+const { url, options } = requestOptions;
 
 class App extends Component {   
+  componentDidMount() {
+  
+  console.log(requestOptions);
+  fetch(url, options);
+  }
 
   render(){
     return (
