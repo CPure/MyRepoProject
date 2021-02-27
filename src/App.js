@@ -13,14 +13,21 @@ const requestOptions = endpoint("GET /repos/{owner}/{repo}/commits", {
 });
 const { url, options } = requestOptions;
 
-class App extends Component {   
-  componentDidMount() {
+class App extends Component {  
+  constructor(props) {
+    super(props);
+    this.state = {
+      commits: []
+    };
+  }
+  async componentDidMount() {
   
-  console.log(requestOptions);
-  fetch(url, options);
+  //console.log(requestOptions);
+  await fetch(url, options).then(response=> response.json()).then(data => this.setState({commits:data}));
   }
 
   render(){
+    console.log(this.state.commits);
     return (
       <div className="App">
       <header className="App-header">
