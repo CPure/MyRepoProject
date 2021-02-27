@@ -1,6 +1,7 @@
 import React from "react";
 import IndexNavbar from "../components/IndexNavBar";
 import IndexHeader from "../components/IndexHeader.js";
+import CommitSection from "./CommitSection.js"
 
 function Index() {
     document.documentElement.classList.remove("nav-open");
@@ -15,7 +16,7 @@ function Index() {
         <IndexNavbar />
         <IndexHeader />
         <div className="main">
-          
+          <CommitSection />
         </div>
       </>
     );
